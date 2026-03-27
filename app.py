@@ -72,10 +72,18 @@ def download_model_if_needed(model_name):
 
 @st.cache_resource
 def load_tflite_interpreter(model_name):
-    """Download (nếu cần) và load TFLite model vào RAM"""
     try:
         model_path = download_model_if_needed(model_name)
-        interpreter = tf.lite.Interpreter(model_path=model_path)
+
+        if model_name == "ViT":
+            # ViT dùng SELECT_TF_OPS, cần load bằng tensorflow đầy đủ
+            interpreter = tf.lite.Interpreter(
+                model_path=model_path,
+                experimental_op_resolver_type=tf.lite.experimental.OpResolverType.AUTO
+            )
+        else:
+            interpreter = tf.lite.Interpreter(model_path=model_path)
+
         interpreter.allocate_tensors()
         return interpreter
     except Exception as e:
