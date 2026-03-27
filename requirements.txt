@@ -1,5 +1,5 @@
 streamlit
-tensorflow
+ai-edge-litert
 gdown
 Pillow
 numpy
