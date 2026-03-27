@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-from ai_edge_litert.interpreter import Interpreter
 from PIL import Image
 import time
 import os
@@ -76,7 +75,7 @@ def load_tflite_interpreter(model_name):
     """Download (nếu cần) và load TFLite model vào RAM"""
     try:
         model_path = download_model_if_needed(model_name)
-        interpreter = Interpreter(model_path=model_path)
+        interpreter = tf.lite.Interpreter(model_path=model_path)
         interpreter.allocate_tensors()
         return interpreter
     except Exception as e:
