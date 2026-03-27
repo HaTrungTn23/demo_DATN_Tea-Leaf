@@ -42,14 +42,18 @@ ENSEMBLE_WEIGHTS = {
 
 # Danh sách tên bệnh (Phải đúng thứ tự output của model lúc train)
 CLASS_NAMES = [
-    "Anthracnose (Thán thư)",
-    "Algal leaf (Tảo ký sinh)",
-    "Bird eye spot (Đốm mắt cua)",
-    "Brown blight (Cháy lá nâu)",
-    "Gray blight (Cháy lá xám)",
-    "Healthy (Khỏe mạnh)",
-    "Red leaf spot (Đốm lá đỏ)",
-    "White spot (Đốm trắng)"
+   'Anthracnose (Thán thư)', 
+    'algal leaf (Đốm tảo)', 
+    'bird eye spot (Đốm mắt chim)', 
+    'brown blight (Héo nâu)', 
+    'gray light (Thối xám)', 
+    'green mirid bug (Bọ mù xanh)', 
+    'healthy (Lá khỏe mạnh)', 
+    'helopeltis (Bọ xít muỗi)', 
+    'red leaf spot (Đốm lá đỏ)', 
+    'red spider (Nhện đỏ)', 
+    'tea red scab (Vảy đỏ)', 
+    'white spot (Đốm trắng)'
 ]
 
 IMG_SIZE = (256, 256)
