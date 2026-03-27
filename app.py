@@ -20,9 +20,9 @@ st.set_page_config(
 # Cách lấy file ID: mở link share Drive, copy phần sau /d/ và trước /view
 # Ví dụ: https://drive.google.com/file/d/1ABC_XYZ_FILE_ID/view -> lấy "1ABC_XYZ_FILE_ID"
 DRIVE_IDS = {
-    "ResNet": "THAY_FILE_ID_RESNET_O_DAY",
-    "VGG16":  "THAY_FILE_ID_VGG16_O_DAY",
-    "ViT":    "THAY_FILE_ID_VIT_O_DAY",
+    "ResNet": "1mRXyMWGamodNwXv0Br2W7Ba7p0AX7XX1",
+    "VGG16":  "1_psRep79o6O4OJWxeNCR6myVmLgUO6pZ",
+    "ViT":    "1S7peGdbToyxn1Qrgz3u0d5BBRGvrK7Kt",
 }
 
 # Tên file lưu local sau khi download
